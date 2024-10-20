@@ -1,0 +1,166 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    background-image: url('background.jpg'); /* Замените на ваш путь к изображению */
+    background-size: cover; /* Чтобы изображение покрывало весь фон */
+    background-position: center; /* Центровка изображения */
+    background-attachment: fixed; /* Статичное изображение на заднем фоне */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+    color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Стили для секции "О нас" */
+#about, #menu, #testimonials, #location {
+    margin-bottom: 40px;
+}
+
+p {
+    color: #d3d3d3;
+}
+
+/* Стили для карточек меню */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 300px;
+    background: #262626;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: #f4f4f4;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+/* Стили для отзывов */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial {
+    flex: 1 1 250px;
+    background: #262626;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .card-container, .testimonial-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #ff3333;
+}
+
+/* Стили для печати */
+@media print {
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    header, footer {
+        display: none;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+}
